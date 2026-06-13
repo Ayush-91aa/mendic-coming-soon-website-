@@ -451,6 +451,36 @@ footer .logo {
   font-size: 1.5rem;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--accent-color);
+  font-size: 1.3rem;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(95, 74, 139, 0.08);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid rgba(95, 74, 139, 0.1);
+}
+
+.social-links a:hover {
+  background: var(--accent-color);
+  color: var(--white);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(95, 74, 139, 0.2);
+}
+
 /* Animations */
 .fade-in-up {
   opacity: 0;
