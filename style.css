@@ -58,6 +58,10 @@ p {
   padding: 6rem 0;
 }
 
+.cta-section {
+  padding-bottom: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -472,12 +476,14 @@ footer .logo {
   box-shadow: 0 5px 15px rgba(95, 74, 139, 0.08);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border: 1px solid rgba(95, 74, 139, 0.1);
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 .social-links a:hover {
   background: var(--accent-color);
   color: var(--white);
-  transform: translateY(-4px);
+  transform: translateY(-4px) translateZ(0);
   box-shadow: 0 10px 20px rgba(95, 74, 139, 0.2);
 }
 
