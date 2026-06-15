@@ -308,6 +308,44 @@ p {
   margin-bottom: 1rem;
 }
 
+/* Services Section */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(95, 74, 139, 0.04);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.6);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(95, 74, 139, 0.1);
+  border-color: rgba(95, 74, 139, 0.2);
+}
+
+.service-card .icon-box {
+  width: 50px;
+  height: 50px;
+  font-size: 1.25rem;
+}
+
+.service-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  margin: 0;
+}
+
 /* How It Works */
 .bg-light {
   background: rgba(255, 255, 255, 0.4);
@@ -519,6 +557,10 @@ footer .logo {
     grid-template-columns: 1fr;
   }
   
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
   .steps-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -527,6 +569,10 @@ footer .logo {
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 3rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
   }
   
   .steps-container {
