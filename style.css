@@ -568,6 +568,12 @@ footer .logo {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding-top: 6.5rem;
+    gap: 2rem;
+    min-height: auto;
+  }
+
   .hero h1 {
     font-size: 2.3rem;
     line-height: 1.1;
